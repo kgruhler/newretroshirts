@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - New Age v5.0.6 (https://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2019 Start Bootstrap
+ * Start Bootstrap - New Age v5.0.9 (https://startbootstrap.com/theme/new-age)
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
@@ -158,14 +158,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/background_sun.jpg") no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), #7b4397;
   background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430); */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
 }
 
 header.masthead .header-content {
@@ -294,7 +289,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/summer_vibes.png");
+  background-image: url("../img/bg-cta.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -406,7 +401,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .bg-primary {
   background: #fdcc52;
   background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
-  background: linear-gradient(#fff, #fff);
+  background: linear-gradient(#fdcc52, #fdc539);
 }
 
 .text-primary {
@@ -447,17 +442,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   height: 100vh;
   min-height: 350px;
   background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 /* PRICING for SHOP*/
 section.pricing {
   background: #007bff;
-  background: linear-gradient(to right, #a74171, #004eb6);    
+  background: -webkit-gradient(linear, left top, right top, from(#a74171), to(#004eb6));
+  background: linear-gradient(to right, #a74171, #004eb6);
 }
+
 section.pricing .card {
   background-color: #ffffff8f;
 }
@@ -465,7 +459,9 @@ section.pricing .card {
 .pricing .card {
   border: none;
   border-radius: 1rem;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -504,15 +500,16 @@ section.pricing .card {
   font-weight: bold;
   padding: 1rem;
   opacity: 0.7;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 /* Hover Effects on Card */
-
 @media (min-width: 992px) {
   .pricing .card:hover {
     margin-top: -.25rem;
     margin-bottom: .25rem;
+    -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
   .pricing .card:hover .btn {
